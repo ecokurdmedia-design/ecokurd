@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | EcoKurd</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 800px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-item figcaption {
+            padding: 0.5rem 0;
+            text-align: center;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="EcoKurd Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button onclick="setLang('en')">🇬🇧 EN</button>
+                    <button onclick="setLang('so')">🇰🇷 سۆرانی</button>
+                    <button onclick="setLang('ku')">🇰🇷 Kurmancî</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <h1 data-en="Photo Gallery" 
+                data-so="گالێریی وێنە" 
+                data-ku="Galeriya Wêneyan">
+                Photo Gallery
+            </h1>
+            <p data-en="Explore the beauty and resilience of the Kurdish Highlands through our lens." 
+               data-so="جوانی و بەرگری باڵندە کوردی ببینە لە ڕێگەی لێنزەکەمانەوە." 
+               data-ku="Jemal û berxwedana Bilindayên Kurd bi navgîniya lensa me re bibînin.">
+                Explore the beauty and resilience of the Kurdish Highlands through our lens.
+            </p>
+
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="images/gallery1.jpg" alt="Highland Landscape">
+                    <figcaption data-en="Zagros Mountains at Sunrise" 
+                                data-so="چیاکانی زاگرۆس لە کاتی ھەڵاتنی ھەورۆزدا" 
+                                data-ku="Çiyayên Zagros di Dema Xwitiya Rojê de">
+                        Zagros Mountains at Sunrise
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery2.jpg" alt="Community Planting Trees">
+                    <figcaption data-en="Volunteers Planting Native Trees" 
+                                data-so="بەڕێوەبەرایەتی خەڵکی دار دەخەنەوە" 
+                                data-ku="Xebatkarên Herêmî Daran Dixin Erdê">
+                        Volunteers Planting Native Trees
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery3.jpg" alt="Traditional Water System">
+                    <figcaption data-en="Ancient Qanat System in Kurdistan" 
+                                data-so="سیستەمی قەناتی کۆن لە کوردستاندا" 
+                                data-ku="Sîstema Qanat a kevnar li Kurdistanê">
+                        Ancient Qanat System in Kurdistan
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item">
+                    <img src="images/gallery4.jpg" alt="Wildlife">
+                    <figcaption data-en="Endangered Species of the Region" 
+                                data-so="جۆرە لەناوچوونی ھەرێمەکە" 
+                                data-ku="Cureyên Tengasiyê yên Herêmê">
+                        Endangered Species of the Region
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-en="© 2025 EcoKurd. All rights reserved." 
+               data-so="© ٢٠٢٥ ئیکۆکورد. هەموو مافەکان ڕزگیردراون." 
+               data-ku="© 2025 EcoKurd. Hemî mafên xweyî parastî ne.">
+                © 2025 EcoKurd. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/lang-switcher.js"></script>
+</body>
+</html>
