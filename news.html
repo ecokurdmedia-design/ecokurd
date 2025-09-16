@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News | EcoKurd</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.png" alt="EcoKurd Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button onclick="setLang('en')">🇬🇧 EN</button>
+                    <button onclick="setLang('so')">🇰🇷 سۆرانی</button>
+                    <button onclick="setLang('ku')">🇰🇷 Kurmancî</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+            <h1 data-en="Latest News" 
+                data-so="هەواڵە نوێیەکان" 
+                data-ku="Nûçeyên Dawîn">
+                Latest News
+            </h1>
+
+            <article class="news-item">
+                <img src="images/news1.jpg" alt="News Image" class="news-img">
+                <h3 data-en="Community Reforestation Project Launched in Zagros" 
+                    data-so="پڕۆژەی دووبارە دارستانکردنی کۆمەڵگەیی لە زاگرۆس دەستپێکرا" 
+                    data-ku="Projeya nûkirina daristanê ya civakî li Zagros dest pê kir">
+                    Community Reforestation Project Launched in Zagros
+                </h3>
+                <p class="date" data-en="April 5, 2025" data-so="٥ نیسانی ٢٠٢٥" data-ku="5 Nîsan 2025">April 5, 2025</p>
+                <p data-en="Local volunteers planted over 5,000 native trees to restore degraded lands." 
+                   data-so="بەڕێوەبەرایەتی خەڵکی نزیکەی ٥,٠٠٠ داری نەتەوەیی کرد بۆ چاککردنەوەی زەوی خراپبوو." 
+                   data-ku="Xebatkarên herêmî zêdetirî 5,000 darên xwecihî şikandin da ku erdên xirabkirî vekişînin.">
+                    Local volunteers planted over 5,000 native trees to restore degraded lands.
+                </p>
+                <a href="#" class="btn" data-en="Read More" data-so="زیاتر بخوێنەوە" data-ku="Zêdetir Bixwîne">Read More</a>
+            </article>
+
+            <article class="news-item">
+                <img src="images/news2.jpg" alt="News Image" class="news-img">
+                <h3 data-en="Water Rights Forum Held in Sulaymaniyah" 
+                    data-so="فۆرۆمی مافی ئاو لە سلێمانی بەڕێوەچوو" 
+                    data-ku="Foruma Mafên Avê li Silêmanî hate lidarxistin">
+                    Water Rights Forum Held in Sulaymaniyah
+                </h3>
+                <p class="date" data-en="March 28, 2025" data-so="٢٨ ئازاری ٢٠٢٥" data-ku="28 Adar 2025">March 28, 2025</p>
+                <p data-en="Activists and academics gathered to discuss sustainable water management." 
+                   data-so="چالاکوان و زاناکان کۆبوونەوە بۆ گفتوگۆ لەسەر بەڕێوەبردنی بەردەوامی ئاو." 
+                   data-ku="Çalakvan û zanyar pêk hatin da ku li ser birêveberiya berdewam a avê gotûbêj bikin.">
+                    Activists and academics gathered to discuss sustainable water management.
+                </p>
+                <a href="#" class="btn" data-en="Read More" data-so="زیاتر بخوێنەوە" data-ku="Zêdetir Bixwîne">Read More</a>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-en="© 2025 EcoKurd. All rights reserved." 
+               data-so="© ٢٠٢٥ ئیکۆکورد. هەموو مافەکان ڕزگیردراون." 
+               data-ku="© 2025 EcoKurd. Hemî mafên xweyî parastî ne.">
+                © 2025 EcoKurd. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/lang-switcher.js"></script>
+</body>
+</html>
