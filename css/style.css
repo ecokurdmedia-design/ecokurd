@@ -22,7 +22,7 @@ body {
 /* ===== Header ===== */
 header {
     background: fffdfd
-    color: green;
+    color: white;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: green;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s;
@@ -148,4 +148,5 @@ footer {
         font-size: 1rem;
     }
 }
+
 
