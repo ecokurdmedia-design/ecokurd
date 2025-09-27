@@ -41,13 +41,13 @@ nav ul {
     gap: 1.5rem;
 }
 nav a {
-    color: #1C3B0E;
+    color: #277D05;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s;
 }
 nav a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 .lang-switcher {
     margin-left: 2rem;
@@ -126,6 +126,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 
