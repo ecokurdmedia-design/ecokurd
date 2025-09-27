@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-/* ===== Header ===== /
+/* ===== Header ===== */
 header {
     background: fffdfd
     color: white;
@@ -62,7 +62,7 @@ nav a:hover {
     cursor: pointer;
     font-weight: bold;
 }
-/ ===== Hero Section ===== /
+/* ===== Hero Section ===== */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hero-bg.jpg') center/cover;
     color: white;
@@ -92,7 +92,7 @@ nav a:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
-/ ===== Page Content ===== /
+/* ===== Page Content ===== */
 .page-content {
     padding: 4rem 0;
 }
@@ -101,7 +101,7 @@ nav a:hover {
     margin-bottom: 1.5rem;
     color: #2e7d32;
 }
-/ ===== Footer ===== /
+/* ===== Footer ===== */
 footer {
     background: #333;
     color: #fff;
@@ -109,7 +109,7 @@ footer {
     padding: 1.5rem 0;
     margin-top: 3rem;
 }
-/ ===== Responsive ===== */
+/* ===== Responsive ===== */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
