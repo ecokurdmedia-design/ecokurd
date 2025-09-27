@@ -5,6 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About EcoKurd</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Team section styles */
+        .team-section {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px solid #4CAF50;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .team-member {
+            background: #f9f9f9;
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid #4CAF50;
+        }
+        
+        .team-member h3 {
+            color: #2E7D32;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+        
+        .team-member .role {
+            color: #666;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .team-member .description {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .team-member {
+                padding: 20px;
+            }
+            
+            .team-member img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,7 +110,7 @@
             </h1>
 
             <p data-en="EcoKurd is a cross-border media initiative that combines visual storytelling, ecological awareness, and community engagement to address the growing environmental challenges in the Kurdish Highlands." 
-               data-so="ئیکۆکورد یەکەم پڕۆژەی میدیای نێودەوڵەتییە کە چیرۆکی بینراو، ئاگایی ژینگەیی و چالاکی کۆمەڵگەیی ئاوێتە دەکات بۆ ڕووبەڕووبوونەوەی مەترسییە ژینگەییە بەرفراوانەکان لە ناوچە جیاجیاکانی کوردستاندا." 
+               data-so="کۆکورد یەکەم پڕۆژەی میدیای نێودەوڵەتییە کە چیرۆکی بینراو، ئاگایی ژینگەیی و چالاکی کۆمەڵگەیی ئاوێتە دەکات بۆ ڕووبەڕووبوونەوەی مەترسییە ژینگەییە بەرفراوانەکان لە ناوچە جیاجیاکانی کوردستاندا." 
                data-ku="EcoKurd yekemîn projeya medyayê ya navneteweyî ye ku çîrokên vîzûel, hişyariya ekojîk û beşdarîbûna civakî tevlihev dike da ku bi berjewendiya pir zêdekirina pirsgirêkên jîngehî yên li Bilindayên Kurd re were.">
                 EcoKurd is a cross-border media initiative that combines visual storytelling, ecological awareness, and community engagement to address the growing environmental challenges in the Kurdish Highlands.
             </p>
@@ -55,7 +128,7 @@
                     Expose ecological crises often overlooked in global discourse
                 </li>
                 <li data-en="Amplify local voices offering sustainable alternatives" 
-                    data-so="بەرزکردنەوەی دەنگی خۆجێی کە چارەسەرێکی بەردەوام پێشکەش دەکەن" 
+                    data-so="بەرزکردنەوەی دەنگی خۆجێی کە چارەسەری بەردەوام پێشکەش دەکەن" 
                     data-ku="Bilindkirina dengên herêmî yên ku çareseriyên berdewam pêşkêş dikin">
                     Amplify local voices offering sustainable alternatives
                 </li>
@@ -70,6 +143,57 @@
                     Build a digital platform that inspires action and international solidarity
                 </li>
             </ul>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <h2 data-en="Our Team" 
+                    data-so="تیمەکەمان" 
+                    data-ku="Tîma me">
+                    Our Team
+                </h2>
+
+                <div class="team-grid">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <img src="images/team/member1.jpg" alt="Team Member 1">
+                        <h3 data-en="Evin Adin" 
+                            data-so="ئەڤین ئادین" 
+                            data-ku="Evîn Adîn">
+                            Evin Adin
+                        </h3>
+                        <p class="role" data-en="Environmental Activist & Co-Founder" 
+                           data-so="چالاکی ژینگەیی و هاو-دامەزرێنەر" 
+                           data-ku="Çalakê Jîngehê û Hev-Damezrîner">
+                            Environmental Activist & Co-Founder
+                        </p>
+                        <p class="description" data-en="Evîn is a passionate environmental activist with over 10 years of experience covering ecological issues in the Middle East. She founded EcoKurd to give voice to the environmental challenges facing Kurdish communities across borders." 
+                           data-so="ئەڤین چالاکێکی پڕجۆشە لە بواری ژینگە کە زیاتر لە ١٠ ساڵ ئەزموونی هەیە لە هەواڵدان بۆ چارەسەری کێشە ژینگەییەکانی ناوچەی ڕۆژهەڵاتی ناوین. هاو-دامەزرێنەری ئیکۆکورد بووە بۆ ورووژاندنی ئاستەنگە ژینگەییەکانی کوردستان
+                           data-ku="Evîn çalakvaneke jîngehê ya dilxwaz e ku zêdetirî 10 sal ezmûna wê di ragihandina pirsgirêkên jîngehê yên li Rojhilata Navîn de heye. Wê hev-damezrênera EcoKurd bû da ku pirsgirêkên jîngehê li Kurdistanê bîne ziman.">
+                            Evîn is a passionate environmental activist with over 10 years of experience covering ecological issues in the Middle East. She founded EcoKurd to give voice to the environmental challenges facing Kurdish communities across borders.
+                        </p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <img src="images/team/member2.jpg" alt="Team Member 2">
+                        <h3 data-en="Dr. Dawod Rasooli" 
+                            data-so="د. داود رسولی" 
+                            data-ku="Dr. Dawod Rasooli">
+                            Dr. Dawod Rasooli
+                        </h3>
+                        <p class="role" data-en="Environmental Specialist & Co-Founder" 
+                           data-so="شارەزای ژینگە و هاو-دامەزرێنەر" 
+                           data-ku="Pisporê Jîngehê û Hev-Damezrîner">
+                            Environmental Specialist & Co-Founder
+                        </p>
+                        <p class="description" data-en="Dr. Dawod holds a PhD in Soil and Water Science and specializes in ecosystems. His research focuses on land conservation in the Kurdish Highlands and the impacts of climate change on local communities." 
+                           data-so="دکتۆر داود خاوەنی دکتۆرایە لە زانستی خاک و ئاو و پسپۆڕە لە ئیکۆسیستەمەکان. لێکۆڵینەوەکانی لەسەر پاراستنی زەوی لە کوردستان و کاریگەرییەکانی گۆڕانی کەشوهەوا لەسەر پێکهاتە ناوخۆییەکانە." 
+                           data-ku="Dr. Dawod xwediyê doktoraya xwe di Zanista Ax û Avê de ye û pisporê ekosîsteman e. Lêkolîna wî li ser parastina erdê li Kurdistan û bandorên guherîna avhewayê li ser civakên herêmî disekine.">
+                            Dr. Dawod holds a PhD in Soil and Water Science and specializes in ecosystems. His research focuses on land conservation in the Kurdish Highlands and the impacts of climate change on local communities.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -85,5 +209,4 @@
 
     <script src="js/lang-switcher.js"></script>
 </body>
-
 </html>
