@@ -54,7 +54,7 @@ nav a:hover {
 }
 .lang-switcher button {
     background: #fff;
-    color: #2e7d32;
+    color: #e74c3c;
     border: none;
     padding: 0.3rem 0.6rem;
     margin-left: 0.5rem;
@@ -126,6 +126,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 
