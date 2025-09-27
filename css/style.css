@@ -18,7 +18,7 @@ body {
 }
 /* ===== Header ===== */
 header {
-    background: #fffdfd
+    background: #fffdfd;
     color: white;
     padding: 1rem 0;
     position: sticky;
@@ -41,7 +41,7 @@ nav ul {
     gap: 1.5rem;
 }
 nav a {
-    color: #277D05;
+    color: #1C3B0E;
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.3s;
@@ -126,6 +126,7 @@ footer {
         font-size: 1rem;
     }
 }
+
 
 
 
